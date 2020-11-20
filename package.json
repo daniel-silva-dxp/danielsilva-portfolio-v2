@@ -1,0 +1,19 @@
+{
+  "name": "danielsilva-portfolio-v2",
+  "version": "2.0.0",
+  "description": "Versão 2 do meu portfólio web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-silva-dxp/danielsilva-portfolio-v2.git"
+  },
+  "author": "Daniel Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniel-silva-dxp/danielsilva-portfolio-v2/issues"
+  },
+  "homepage": "https://github.com/daniel-silva-dxp/danielsilva-portfolio-v2#readme"
+}
