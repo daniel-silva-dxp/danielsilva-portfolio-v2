@@ -137,15 +137,14 @@ button {
 .text-green {
   color: var(--green-color);
 }
-.display-flex {
-  display: flex;
-}
 .align-row-center {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 .align-column-center {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -153,29 +152,18 @@ button {
 /*----------------------------------------
         BTN ICON MENU
 -----------------------------------------*/
-header {
-  z-index: 900;
-}
-header.container {
-  display: flex;
-  flex-flow: row-reverse wrap;
-}
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-ul {
-  list-style: none;
+.header {
+  background-color: brown;
+  z-index: 999;
+  width: 100%;
+  height: 80px;
 }
 .btn-nav-container {
-  position: fixed;
-  top: 0;
-  right: 30px;
+  background-color: aqua;
   width: 50px;
   height: 20px;
-  margin-top: 3.5em;
   cursor: pointer;
-  z-index: 901;
+  z-index: 999;
   background: transparent;
   border: none;
   outline: none;
@@ -224,6 +212,10 @@ ul {
 }
 
 /*----------------------------------------
+        SIDEBAR MENU
+-----------------------------------------*/
+
+/*----------------------------------------
         FULLSCREEN MENU
 -----------------------------------------*/
 .float-nav {
@@ -245,6 +237,7 @@ ul {
   transition: all 0.7s ease 0.3s;
 }
 .float-nav .bg2 {
+  z-index: 900;
   background: rgba(108, 255, 108, 1);
   transition-delay: 0s;
 }
@@ -370,7 +363,7 @@ ul {
   top: 0;
   width: 1px;
   height: 0%;
-  background: rgba(37, 38, 42, 0.05);
+  background: rgba(135, 150, 154, 0.05);
   transition: height 1s cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
   -moz-transition: height 1s cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
   -webkit-transition: height 1s cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
@@ -405,6 +398,61 @@ ul {
   -webkit-transition: height 1s cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
   -o-transition: height 1s cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
 }
+
+/*----------------------------------------
+        ANIMATIONS
+-----------------------------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1999999999;
+}
+.preloader.immune {
+  bottom: 0;
+}
+.preloader.white {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.preloader.black {
+  background-color: rgba(1, 1, 1, 0.5);
+}
+.preloader > i.radial-loader:not(:required) {
+  -moz-animation: radial-loader 0.5s infinite linear;
+  -webkit-animation: radial-loader 0.5s infinite linear;
+  animation: radial-loader 0.5s infinite linear;
+  border-color: var(--green-color);
+  border-style: solid;
+  border-width: 2px;
+  border-right-color: transparent;
+  border-radius: 100%;
+  display: block;
+  position: relative;
+  float: right;
+  margin: 10px 40px;
+  overflow: hidden;
+  width: 10px;
+  height: 10px;
+}
+.preloader > span.loading-bar {
+  -moz-animation: loading-bar 3s 1;
+  -webkit-animation: loading-bar 3s 1;
+  animation: loading-bar 3s 1;
+  display: block;
+  height: 2px;
+  background-color: #ea6052;
+  opacity: 0;
+  transition: width 0.5s;
+}
+.preloader > span.loading-bar.green-colored {
+  background-color: var(--green-color);
+}
+.preloader > .green-colored.radial-loader {
+  border-color: var(--green-color);
+  border-right-color: transparent !important;
+}
+
 /*----------------------------------------
         ANIMATIONS
 -----------------------------------------*/
