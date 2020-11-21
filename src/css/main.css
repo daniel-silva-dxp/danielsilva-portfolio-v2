@@ -115,9 +115,6 @@ button {
   width: 100%;
   max-width: 660px;
 }
-.position-relative {
-  position: relative;
-}
 .tags {
   color: var(--light-grey-color);
   position: fixed;
@@ -137,6 +134,9 @@ button {
 .text-green {
   color: var(--green-color);
 }
+.position-relative {
+  position: relative;
+}
 .align-row-center {
   display: flex;
   flex-direction: row;
@@ -153,13 +153,10 @@ button {
         BTN ICON MENU
 -----------------------------------------*/
 .header {
-  background-color: brown;
-  z-index: 999;
-  width: 100%;
+  width: 33.33333%;
   height: 80px;
 }
 .btn-nav-container {
-  background-color: aqua;
   width: 50px;
   height: 20px;
   cursor: pointer;
@@ -214,6 +211,47 @@ button {
 /*----------------------------------------
         SIDEBAR MENU
 -----------------------------------------*/
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+aside .bg-color {
+  position: absolute;
+  z-index: 1;
+  background-color: #6cff6c;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.2s;
+}
+aside .logo {
+  z-index: 2;
+  width: 33.33333%;
+  margin-left: 15px;
+}
+aside .txt-nav {
+  z-index: 2;
+  color: var(--white-color);
+  width: 33.33333%;
+  height: 100%;
+  padding: 10px 15px;
+  justify-content: space-evenly;
+}
+aside .txt-nav .line-menu {
+  width: 20px;
+  height: 2px;
+  background-color: var(--white-color);
+}
+aside .txt-nav p,
+aside .txt-nav div {
+  font-size: 10px;
+}
 
 /*----------------------------------------
         FULLSCREEN MENU
@@ -224,20 +262,19 @@ button {
   display: none;
   width: 100%;
   height: 100%;
-  z-index: 99;
 }
 .float-nav .bg1,
 .float-nav .bg2 {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(108, 255, 108, 0.6);
   top: 0;
   left: 100%;
   transition: all 0.7s ease 0.3s;
 }
 .float-nav .bg2 {
-  z-index: 900;
+  z-index: 99;
   background: rgba(108, 255, 108, 1);
   transition-delay: 0s;
 }
@@ -250,13 +287,6 @@ button {
   height: 100%;
   flex-wrap: wrap;
   max-width: none;
-}
-.float-nav .logo-menu {
-  z-index: 10;
-  max-width: 820px;
-  margin: 20px;
-  opacity: 0;
-  transition: all 0.3s ease 0s;
 }
 .float-nav ul {
   position: relative;
@@ -293,19 +323,17 @@ button {
 }
 .float-nav ul li span {
   transform: rotate(-90deg);
+  font-size: 30px;
   margin-right: 40px;
   padding: 5px;
-  color: var(--green-color);
 }
 .float-nav ul li a {
-  font-size: 16px;
+  font-size: 30px;
   position: relative;
-  color: var(--txt-color);
-  letter-spacing: 0.4em;
+  color: var(--white-color);
+  font-weight: 600;
+  letter-spacing: 0.2em;
   transition: all 0.2s ease 0.2s;
-}
-.float-nav ul li a:hover {
-  color: var(--green-color);
 }
 .float-nav.active .bg1,
 .float-nav.active .bg2 {
@@ -317,7 +345,6 @@ button {
 .float-nav.active .bg2 {
   transition-delay: 0.3s;
 }
-.float-nav.active .logo-menu,
 .float-nav.active ul {
   opacity: 1;
   transition-delay: 1s;
@@ -363,7 +390,7 @@ button {
   top: 0;
   width: 1px;
   height: 0%;
-  background: rgba(135, 150, 154, 0.05);
+  background: rgba(135, 150, 154, 0.04);
   transition: height 1s cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
   -moz-transition: height 1s cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
   -webkit-transition: height 1s cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
@@ -537,6 +564,52 @@ button {
         MEDIA QUERIES
 -----------------------------------------*/
 @media only screen and (min-width: 992px) {
+  /*----------------------------------------
+        BTN ICON MENU
+-----------------------------------------*/
+  .header {
+    width: 100%;
+    height: 80px;
+  }
+
+  /*----------------------------------------
+        SIDEBAR MENU
+-----------------------------------------*/
+  aside {
+    position: fixed;
+    width: 80px;
+    height: 100vh;
+    flex-direction: column;
+  }
+  aside .header:hover .bg-color {
+    opacity: 0;
+  }
+  aside .logo {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  aside .txt-nav {
+    width: 100%;
+    height: 110px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  aside .txt-nav .line-menu {
+    transform: rotate(-90deg);
+  }
+  aside .txt-nav p,
+  aside .txt-nav div {
+    transform: rotate(-90deg);
+  }
+
+  /*----------------------------------------
+        FULLSCREEN MENU
+-----------------------------------------*/
 }
 @media only screen and (min-width: 1200px) {
 }
