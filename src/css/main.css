@@ -37,7 +37,7 @@
  * 1. General style
  */
 /*Text font*/
-@import "https://fonts.googleapis.com/css?family=La+Belle+Aurore|Roboto+Mono:100,300,400,500,700|Roboto:100,300,400,500,700&display=swap";
+@import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore|Roboto+Mono:100,300,400,500,700|Roboto:100,300,400,500,700&display=swap");
 
 ::selection {
   background: #555;
