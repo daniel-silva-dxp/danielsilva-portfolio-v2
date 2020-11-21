@@ -656,24 +656,24 @@ aside .txt-nav div {
   color: #fff;
 }
 .slide-inner--info h4 {
-  position: relative;
   font-size: 16px;
   color: #fff;
   font-weight: 400;
   font-family: "Roboto Mono";
 }
-.slide-inner--info h4::before {
+.slide-inner--info p {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+}
+.slide-inner--info p::before {
   content: "";
-  background-color: #07d976;
+  background-color: var(--green-color);
   width: 40px;
   height: 4px;
   position: absolute;
   bottom: -4px;
   z-index: 2;
-}
-.slide-inner--info p {
-  font-size: 14px;
-  font-weight: 400;
 }
 .slide-inner--info .copyright {
   width: 50px;
