@@ -2,8 +2,8 @@
         VARIABLES
 -----------------------------------------*/
 :root {
-  --green-color: #6cff6c;
-  --bg-color: #25262a;
+  --green-color: #07d976;
+  --bg-color: #19191f;
   --txt-color: #333334;
   --light-grey-color: #87969a;
   --white-color: #fff;
@@ -119,7 +119,7 @@ button {
   color: var(--light-grey-color);
   position: fixed;
   bottom: 0;
-  left: 10px;
+  left: 90px;
   font-size: 18px;
   font-family: "La Belle Aurore", cursive;
   z-index: 800;
