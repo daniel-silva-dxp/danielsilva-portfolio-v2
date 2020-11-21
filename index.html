@@ -114,10 +114,6 @@
 
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/plugin.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Roboto+Mono:100,300,400,500,700|Roboto:100,300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -126,28 +122,24 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <main>
-      <div class="lines finish ready">
-        <div class="line-col position-relative"></div>
-        <div class="line-col position-relative"></div>
-        <div class="line-col position-relative"></div>
-        <div class="line-col position-relative"></div>
-        <div class="line-col position-relative"></div>
-      </div>
-      <aside class="position-relative">
-        <div class="logo">
+    <div class="ms-main-container">
+      <!-- Preloader -->
+      <div class="ms-preloader"></div>
+      <!-- Header -->
+      <aside class=".header">
+        <div class="ds-logo">
           <img
             src="./src/img/svg/logo_white.svg"
             alt="Logo Daniel Silva"
             title="Logo Daniel Silva"
           />
         </div>
-        <header class="header align-row-center">
+        <div class="header align-row-center">
           <div class="bg-color"></div>
           <button class="btn-nav-container open-menu" disabled>
             <div class="btn-nav position-relative"></div>
           </button>
-        </header>
+        </div>
         <div class="txt-nav align-row-center position-relative">
           <div class="line-menu"></div>
           <p>Menu</p>
@@ -155,13 +147,6 @@
         </div>
       </aside>
       <nav class="float-nav">
-        <div class="lines finish ready">
-          <div class="line-col position-relative"></div>
-          <div class="line-col position-relative"></div>
-          <div class="line-col position-relative"></div>
-          <div class="line-col position-relative"></div>
-          <div class="line-col position-relative"></div>
-        </div>
         <div class="bg1"></div>
         <div class="bg2"></div>
         <div class="container align-row-center">
@@ -173,17 +158,134 @@
           </ul>
         </div>
       </nav>
-      <section>
-        <span class="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
-        <span class="tags bottom-tags">
-          &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br />
-          &lt;/html&gt;
-        </span>
-      </section>
-    </main>
-
-    <script src="./src/js/jquery.js"></script>
-    <script src="./src/js/plugin.js"></script>
-    <script src="./src/js/main.js"></script>
+      <!-- Container -->
+      <main class="ms-container home-slider">
+        <section>
+          <span class="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+          <span class="tags bottom-tags">
+            &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br />
+            &lt;/html&gt;
+          </span>
+        </section>
+        <!-- Swiper Slider -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="slide-inner" data-swiper-parallax="45%">
+                <div class="overlay"></div>
+                <div
+                  class="slide-inner--image"
+                  style="background-image: url(./src/img/png/bg-home.png)"
+                ></div>
+                <div class="slide-inner--info">
+                  <h1>Daniel Silva</h1>
+                  <h4>Front-End Developer especializado em UX/UI Design</h4>
+                  <p>Sua próxima ideia já tem um dev!</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="slide-inner" data-swiper-parallax="45%">
+                <div class="overlay"></div>
+                <div
+                  class="slide-inner--image"
+                  style="background-image: url(./src/img/png/bg-home.png)"
+                ></div>
+                <div class="slide-inner--info">
+                  <h1>The Power<br />of Dreams</h1>
+                  <a
+                    href="gallery.html"
+                    data-type="page-transition"
+                    class="ms-btn--slider"
+                    >take a look</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="slide-inner" data-swiper-parallax="45%">
+                <div class="overlay"></div>
+                <div
+                  class="slide-inner--image"
+                  style="background-image: url(./src/img/png/bg_cases.png)"
+                ></div>
+                <div class="slide-inner--info">
+                  <h1>romantic<br />chipping</h1>
+                  <a
+                    href="gallery.html"
+                    data-type="page-transition"
+                    class="ms-btn--slider"
+                    >take a look</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <div class="slide-inner" data-swiper-parallax="45%">
+                <div class="overlay"></div>
+                <div
+                  class="slide-inner--image"
+                  style="background-image: url(./src/img/png/bg-home.png)"
+                ></div>
+                <div class="slide-inner--info">
+                  <h1>What<br />the Fog?</h1>
+                  <a
+                    href="gallery.html"
+                    data-type="page-transition"
+                    class="ms-btn--slider"
+                    >take a look</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-nav-btn">
+            <div class="swiper-button-prev swiper-button-white">prv</div>
+            <div class="swiper-button-next swiper-button-white">nxt</div>
+          </div>
+          <!-- Pagination -->
+          <div class="expanded-timeline">
+            <div class="expanded-timeline__counter">
+              <span></span><span></span>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="scroll-message">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16.5 15.98"
+                class="scroll-svg"
+              >
+                <title>Asset 1</title>
+                <g>
+                  <g data-name="Layer 1">
+                    <polygon
+                      fill="#fff"
+                      points="0 4.64 0.71 5.34 3.85 2.2 3.85 15.98 4.85 15.98 4.85 2.2 8 5.34 8.71 4.64 4.35 0.29 0 4.64"
+                    ></polygon>
+                    <polygon
+                      fill="#fff"
+                      points="11.65 0 11.65 13.79 8.5 10.64 7.79 11.35 12.15 15.7 16.5 11.35 15.79 10.64 12.65 13.79 12.65 0 11.65 0"
+                    ></polygon>
+                  </g>
+                </g>
+              </svg>
+              Scroll
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- /Container -->
+    </div>
+    <!-- JS Libraries -->
+    <!-- jquery-2.1.3.min js -->
+    <script type="text/javascript" src="./src/js/jquery.js"></script>
+    <!-- Vendors -->
+    <script type="text/javascript" src="./src/js/plugin.js"></script>
+    <!-- Main js -->
+    <script type="text/javascript" src="./src/js/main.js"></script>
   </body>
 </html>
