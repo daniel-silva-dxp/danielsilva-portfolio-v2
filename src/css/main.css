@@ -119,8 +119,8 @@ button {
   color: var(--light-grey-color);
   position: fixed;
   bottom: 0;
-  left: 90px;
-  font-size: 18px;
+  left: 10px;
+  font-size: 12px;
   font-family: "La Belle Aurore", cursive;
   z-index: 800;
 }
@@ -564,6 +564,10 @@ aside .txt-nav div {
         MEDIA QUERIES
 -----------------------------------------*/
 @media only screen and (min-width: 992px) {
+  .tags {
+    left: 90px;
+    font-size: 18px;
+  }
   /*----------------------------------------
         BTN ICON MENU
 -----------------------------------------*/
