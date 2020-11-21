@@ -359,32 +359,37 @@ a {
 }
 .float-nav ul::before {
   content: "<nav>";
-  top: -10%;
+  top: -30px;
 }
 .float-nav ul::after {
   content: "</nav>";
   bottom: 0;
-  right: -10%;
+  right: 0;
 }
 .float-nav ul li {
-  flex: 1;
   position: relative;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.2s ease 0.3s;
 }
-.float-nav ul li span {
-  transform: rotate(-90deg);
-  font-size: 30px;
-  margin-right: 40px;
-  padding: 5px;
-}
 .float-nav ul li a {
-  font-size: 30px;
+  font-size: 20px;
   position: relative;
   color: var(--white-color);
   font-weight: 600;
   letter-spacing: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   transition: all 0.2s ease 0.2s;
+}
+.float-nav ul li a span {
+  margin-right: 15px;
+}
+.float-nav ul li a span img {
+  width: 40px;
 }
 .float-nav.active .bg1,
 .float-nav.active .bg2 {
@@ -433,7 +438,7 @@ aside .ds-logo {
   margin-left: 15px;
 }
 aside .ds-logo img {
-  width: 40%;
+  width: 60px;
 }
 aside .txt-nav {
   z-index: 15;
