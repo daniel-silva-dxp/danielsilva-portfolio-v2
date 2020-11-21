@@ -27,7 +27,7 @@
  */
 
 :root {
-  --green-color: #07d976;
+  --green-color: rgba(108, 255, 108, 1);
   --bg-color: #151515;
   --txt-color: #333334;
   --light-grey-color: #87969a;
