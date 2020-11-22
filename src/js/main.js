@@ -2,17 +2,21 @@
   "use strict";
 
   var swiper = new Swiper(".swiper-container--about ", {
-    direction: "vertical",
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl:
-        ".swiper-container--about .swiper-wrapper .swiper-slide .display-about--info .txt-about--info .content-btn .button-next",
-      prevEl: ".button-prev",
-    },
-  });
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    }),
+    slide_cases_mobile = new Swiper(".slide-cases-mb", {
+      direction: "vertical",
+      slidesPerView: 1.3,
+      spaceBetween: 16,
+      speed: 600,
+      loop: !0,
+      pagination: { el: ".swiper-count-mb", type: "fraction" },
+      breakpoints: { 320: { slidesPerView: 1.3 }, 991: { slidesPerView: 2.8 } },
+    });
 
   $.exists = function (selector) {
     return $(selector).length > 0;
