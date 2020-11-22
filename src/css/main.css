@@ -1,7 +1,5 @@
 /*------------------------------------------------------------------
-
 [Table of contents]
-
 1. General style
     1.1 Typography
     1.2 Specials Classes
@@ -32,6 +30,10 @@
   --txt-color: #333334;
   --light-grey-color: #87969a;
   --white-color: #fff;
+}
+@font-face {
+  font-family: MyFont;
+  src: url("../font/myfont-ultra-light.otf");
 }
 /**
  * 1. General style
@@ -180,11 +182,8 @@ a {
   }
 }
 .content {
-  width: 100%;
+  width: 90%;
   height: auto;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-between;
 }
 .tags {
   color: var(--light-grey-color);
@@ -201,6 +200,25 @@ a {
 }
 .bottom-tags {
   bottom: 20px;
+}
+.title {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+.title h4 {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+.title h4::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: var(--green-color);
+  bottom: -2px;
+  left: -10px;
 }
 .center-block {
   display: flex;
@@ -632,7 +650,8 @@ aside .txt-nav div {
 /* 4.2 Slider inner info */
 
 .slide-inner--info {
-  width: auto;
+  width: 100%;
+  height: 100%;
   min-height: 50px;
   padding-left: 3em;
   color: #fff;
@@ -648,33 +667,98 @@ aside .txt-nav div {
   opacity: 1;
   transition: opacity 1s ease 1s;
 }
-.slide-inner--info h1 {
+
+/* HOME */
+.slide-inner--info .display-slide--home h1 {
   margin: 10px 0;
   text-transform: uppercase;
   font-weight: 400;
   line-height: 1em;
   color: #fff;
 }
-.slide-inner--info h4 {
+.slide-inner--info .display-slide--home h4 {
   font-size: 16px;
   color: #fff;
   font-weight: 400;
   font-family: "Roboto Mono";
 }
-.slide-inner--info p {
+.slide-inner--info .display-slide--home p {
   position: relative;
   font-size: 14px;
   font-weight: 400;
 }
-.slide-inner--info p::before {
+.slide-inner--info .display-slide--home p::before {
   content: "";
   background-color: var(--green-color);
   width: 40px;
-  height: 4px;
+  height: 3px;
   position: absolute;
-  bottom: -4px;
+  left: -10px;
+  bottom: -2px;
   z-index: 2;
 }
+
+/* ABOUT */
+.swiper-container--about {
+  width: 95%;
+  height: 100%;
+}
+.display-slide--about {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.display-about--info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.display-about--info .txt-about--info {
+  max-width: 550px;
+  text-align: left !important;
+}
+.display-about--info .txt-about--info h1 {
+  font-size: 55px;
+  color: var(--green-color);
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.display-about--info .txt-about--info h1 span {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--white-color);
+  color: transparent;
+  font-size: 110px;
+  padding-left: 60px;
+}
+.display-about--info .txt-about--info h5 {
+  font-size: 20px;
+  color: var(--green-color);
+  font-weight: 400;
+}
+.display-about--info .txt-about--info p {
+  font-size: 12px;
+  font-weight: 400;
+  max-width: 450px;
+}
+.txt-green {
+  color: var(--green-color);
+}
+.txt-about--info .content-btn {
+  margin-top: 40px;
+  width: 100%;
+}
+.content-btn .btn-square {
+  width: 150px;
+  height: 150px;
+  background-color: var(--green-color);
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--txt-color);
+}
+
 .slide-inner--info .copyright {
   width: 50px;
   position: fixed;
@@ -1340,6 +1424,11 @@ footer {
 
   .swiper-button-prev {
     left: 90px !important;
+  }
+
+  /* ABOUT */
+  .display-slide--about {
+    margin-top: 0;
   }
 }
 @media only screen and (min-width: 1200px) {

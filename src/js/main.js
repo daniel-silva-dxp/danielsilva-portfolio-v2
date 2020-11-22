@@ -1,6 +1,19 @@
 (function (window) {
   "use strict";
 
+  var swiper = new Swiper(".swiper-container--about ", {
+    direction: "vertical",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl:
+        ".swiper-container--about .swiper-wrapper .swiper-slide .display-about--info .txt-about--info .content-btn .button-next",
+      prevEl: ".button-prev",
+    },
+  });
+
   $.exists = function (selector) {
     return $(selector).length > 0;
   };
