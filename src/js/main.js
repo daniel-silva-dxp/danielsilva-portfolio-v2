@@ -2,21 +2,12 @@
   "use strict";
 
   var swiper = new Swiper(".swiper-container--about ", {
-      direction: "vertical",
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    }),
-    slide_cases_mobile = new Swiper(".slide-cases-mb", {
-      direction: "vertical",
-      slidesPerView: 1.3,
-      spaceBetween: 16,
-      speed: 600,
-      loop: !0,
-      pagination: { el: ".swiper-count-mb", type: "fraction" },
-      breakpoints: { 320: { slidesPerView: 1.3 }, 991: { slidesPerView: 2.8 } },
-    });
+    direction: "vertical",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
   $.exists = function (selector) {
     return $(selector).length > 0;
