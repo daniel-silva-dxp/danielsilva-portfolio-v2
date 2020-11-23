@@ -809,10 +809,10 @@ aside .txt-nav div {
   height: 100%;
 }
 .swiper-container--cases .swiper-slide {
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #f00;
 }
 .swiper-container--cases .swiper-slide {
   opacity: 0.4;
@@ -828,6 +828,9 @@ aside .txt-nav div {
 }
 .swiper-container--cases .swiper-slide .box {
   width: 100%;
+  padding: 20px;
+  margin: 10px;
+  background-color: var(--white-color);
   border-radius: 3px;
   display: flex;
   align-items: center;
