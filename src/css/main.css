@@ -32,10 +32,10 @@
 
 :root {
   --green-color: rgba(108, 255, 108, 1);
-  --bg-color: #151515;
+  --bg-color: #fff;
   --txt-color: #333334;
   --light-grey-color: #87969a;
-  --white-color: #fff;
+  --white-color: #151515;
 }
 
 /**
@@ -389,7 +389,7 @@ aside .txt-nav div {
 }
 .float-nav .bg2 {
   z-index: 99;
-  background: rgba(108, 255, 108, 1);
+  background: var(--green-color);
   transition-delay: 0s;
 }
 .float-nav .container {
@@ -493,7 +493,7 @@ textarea {
   height: 50px;
   padding: 0 15px;
   border-radius: 3px;
-  background-color: #f8f8f8;
+  background-color: var(--white-color);
   color: var(--grey-color-1);
 }
 .input-group input[type="text"]:focus,
@@ -517,7 +517,7 @@ textarea:focus {
 .input-group label {
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
-  color: var(--grey-color-3);
+  color: var(--light-grey-color);
 }
 .input-group input[type="text"]:focus ~ label,
 .input-group input[type="text"]:valid ~ label,
@@ -577,7 +577,7 @@ textarea {
 }
 .radio-group label {
   font-size: 24px;
-  color: #bfbfbf;
+  color: var(--light-grey-color);
   display: inline-block;
   padding: 0 0 0 1em;
   cursor: pointer;
@@ -595,18 +595,18 @@ textarea {
   border-radius: 80%;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  border: 10px solid #f8f8f8;
+  border: 10px solid var(--white-color);
   transition: border 0.3s ease;
 }
 .radio-group input:checked + label:before {
-  border-color: #fff;
+  border-color: var(--white-color);
   border-width: 3px;
 }
 .radio-group input + label {
   transition: color 0.7s ease;
 }
 .radio-group input:checked + label {
-  color: #5d5d5d;
+  color: var(--txt-color);
 }
 .btn {
   letter-spacing: 0.1em;
@@ -671,7 +671,7 @@ textarea {
   left: 0;
   opacity: 1;
   visibility: visible;
-  background-color: #151515;
+  background-color: var(--bg-color);
 }
 .ds-main-container {
   position: relative;
@@ -790,7 +790,7 @@ textarea {
   justify-content: center;
   width: 100px !important;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white-color);
   letter-spacing: 0.2em;
   line-height: 2em;
   font-size: 12px;
@@ -834,7 +834,7 @@ textarea {
   height: 100%;
   min-height: 50px;
   padding-left: 3em;
-  color: #fff;
+  color: var(--white-color);
   z-index: 1;
   opacity: 0;
   transition: opacity 1s ease;
@@ -860,11 +860,11 @@ textarea {
   text-transform: uppercase;
   font-weight: 400;
   line-height: 1em;
-  color: #fff;
+  color: var(--white-color);
 }
 .slide-inner--info .display-slide--home h4 {
   font-size: 16px;
-  color: #fff;
+  color: var(--white-color);
   font-weight: 400;
   font-family: "Roboto Mono";
 }
@@ -1069,20 +1069,20 @@ textarea {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .swiper-pagination-progressbar {
-  background: #fff !important;
+  background: var(--white-color) !important;
 }
 .expanded-timeline__counter span {
   text-align: center;
   margin-left: 1.8em;
   margin-right: 100%;
   padding: 0.4em 0;
-  color: #fff;
+  color: var(--white-color);
   display: block;
 }
 .scroll-message {
   position: absolute;
   right: 0;
-  color: #fff;
+  color: var(--white-color);
   opacity: 0.5;
   font-size: 12px;
   display: flex;
@@ -1159,7 +1159,7 @@ textarea {
     min-height: 50px;
     bottom: 10vh;
     padding-left: 0;
-    color: #fff;
+    color: var(--white-color);
     z-index: 1;
     opacity: 0;
     transition: opacity 1s ease;
@@ -1180,7 +1180,7 @@ textarea {
     width: 100%;
     font-size: 1.2em;
     line-height: 1.5;
-    color: #151515;
+    color: var(--bg-color);
     letter-spacing: 0.05em;
   }
 }
@@ -1413,7 +1413,7 @@ textarea {
   background: var(--white-color) !important;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--grey-color-1) !important;
+  background: var(--bg-color) !important;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--green-color) !important;
