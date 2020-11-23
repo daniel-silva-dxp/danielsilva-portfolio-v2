@@ -4,6 +4,7 @@ if(isset($_POST['c_email'])){
 
 	$name = $_POST['c_name'];
 	$email = $_POST['c_email'];
+	$phone = $_POST['c_phone'];
 	$message = $_POST['c_message'];
 	$layout = $_POST['c_sim'];
 	 
@@ -18,6 +19,7 @@ if(isset($_POST['c_email'])){
 	$body .= "\r\n";
 	$body .= "Meu nome é ".$name ."\r\n";
 	$body .= "Meu e-mail é ".$email ."\r\n";
+	$body .= "Meu telefpne é ".$phone ."\r\n";
 	$body .= "Possuo layout? ".$layout ."\r\n";
 	$body .= "Eu tenho uma mensagem pra você, ".$message ."\r\n";
 	$body .= "\r\n";
