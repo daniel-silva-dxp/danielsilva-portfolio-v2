@@ -242,13 +242,13 @@ a {
 .position-relative {
   position: relative;
 }
-.align-row-center {
+.align-row--center {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.align-column-center {
+.align-column--center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -728,23 +728,17 @@ aside .txt-nav div {
   justify-content: center;
   width: 100%;
   height: 100%;
+  padding: 10px;
 }
 .display-about--info .txt-about--info {
   max-width: 550px;
   text-align: left !important;
 }
 .display-about--info .txt-about--info h1 {
-  font-size: 55px;
-  color: var(--green-color);
+  color: var(--white-color);
   text-transform: uppercase;
+  font-size: 85px;
   margin-top: 40px;
-}
-.display-about--info .txt-about--info h1 span {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--white-color);
-  color: transparent;
-  font-size: 110px;
-  padding-left: 60px;
 }
 .display-about--info .txt-about--info h5 {
   font-size: 20px;
@@ -754,7 +748,7 @@ aside .txt-nav div {
 .display-about--info .txt-about--info p {
   font-size: 12px;
   font-weight: 400;
-  max-width: 450px;
+  max-width: 600px;
 }
 .txt-green {
   color: var(--green-color);
