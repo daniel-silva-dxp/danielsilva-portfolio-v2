@@ -808,25 +808,10 @@ aside .txt-nav div {
   width: 100%;
   height: 100%;
 }
-
 .swiper-container--cases .swiper-slide {
   text-align: center;
   font-size: 18px;
   border: 1px solid #f00;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 
 /**
@@ -840,6 +825,16 @@ aside .txt-nav div {
   right: 0;
   margin: 0 auto;
   bottom: 40px;
+}
+.swiper-container--cases .swiper-slide .box {
+  width: 100%;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide .box .cases-content img {
+  width: 400px;
 }
 
 /**
@@ -974,6 +969,11 @@ aside .txt-nav div {
     letter-spacing: 0.05em;
   }
 }
+@media only screen and (min-width: 806px) and (max-width: 991px) {
+  .swiper-container--cases {
+    margin-left: -5%;
+  }
+}
 @media only screen and (min-width: 992px) {
   .tags {
     left: 90px;
@@ -1053,18 +1053,6 @@ aside .txt-nav div {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .swiper-container--cases .swiper-slide .box {
-    width: 100%;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .swiper-container--cases .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
 @media only screen and (min-width: 1200px) {
