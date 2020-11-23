@@ -8,6 +8,17 @@
       clickable: true,
     },
   });
+  var slide_cases = new Swiper(".swiper-container--cases", {
+    direction: "vertical",
+    slidesPerView: 1.3,
+    spaceBetween: 16,
+    speed: 600,
+    loop: !0,
+    pagination: {
+      clickable: true,
+    },
+    breakpoints: { 320: { slidesPerView: 1.3 }, 991: { slidesPerView: 2.8 } },
+  });
 
   $.exists = function (selector) {
     return $(selector).length > 0;
