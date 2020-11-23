@@ -225,6 +225,27 @@ a {
   bottom: -2px;
   left: -10px;
 }
+.display-slide--home h1::before,
+.display-slide--home h1::after,
+.txt-about--info h1::before,
+.txt-about--info h1::after {
+  text-transform: lowercase;
+  position: absolute;
+  font-size: 18px;
+  color: var(--grey-color-3);
+  font-family: "La Belle Aurore";
+}
+.display-slide--home h1::before,
+.txt-about--info h1::before {
+  content: "<h1>";
+  top: -25%;
+}
+.display-slide--home h1::after,
+.txt-about--info h1::after {
+  content: "</h1>";
+  bottom: -20%;
+  right: 20px;
+}
 .center-block {
   display: flex;
   justify-content: center;
@@ -502,23 +523,6 @@ aside .txt-nav div {
   max-width: 88em;
   margin: 0 auto 6em;
 }
-.ds-page-title span {
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #df1f29;
-}
-.page-header {
-  text-transform: uppercase;
-  position: relative;
-  margin: 15px 0;
-}
-.page-desc {
-  width: 50vh;
-  font-size: 1.5em;
-  line-height: 1.5;
-  color: #151515;
-  letter-spacing: 0.05em;
-}
 
 /**
  * 5. Home Slider
@@ -679,13 +683,25 @@ aside .txt-nav div {
 /**
  * 5.3 Slider Home
  */
-
+.display-slide--home {
+  padding: 10px;
+}
 .slide-inner--info .display-slide--home h1 {
+  position: relative;
   margin: 10px 0;
   text-transform: uppercase;
   font-weight: 400;
   line-height: 1em;
   color: #fff;
+}
+.display-slide--home h1::before {
+  content: "<h1>";
+  top: -45%;
+}
+.display-slide--home h1::after {
+  content: "</h1>";
+  bottom: -55%;
+  right: 10px;
 }
 .slide-inner--info .display-slide--home h4 {
   font-size: 16px;
@@ -731,14 +747,23 @@ aside .txt-nav div {
   padding: 10px;
 }
 .display-about--info .txt-about--info {
-  max-width: 550px;
+  max-width: 650px;
   text-align: left !important;
 }
 .display-about--info .txt-about--info h1 {
+  position: relative;
   color: var(--white-color);
   text-transform: uppercase;
-  font-size: 85px;
   margin-top: 40px;
+}
+.txt-about--info h1::before {
+  content: "<h1>";
+  top: -20%;
+}
+.txt-about--info h1::after {
+  content: "</h1>";
+  bottom: -20%;
+  right: 20px;
 }
 .display-about--info .txt-about--info h5 {
   font-size: 20px;
@@ -749,6 +774,7 @@ aside .txt-nav div {
   font-size: 12px;
   font-weight: 400;
   max-width: 550px;
+  padding-right: 15px;
 }
 .txt-green {
   color: var(--green-color);
