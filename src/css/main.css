@@ -410,7 +410,7 @@ aside .txt-nav div {
   opacity: 0;
   transition: all 0.3s ease 0s;
   padding: 0;
-  margin: 40px;
+  margin: 40px 10px;
 }
 .float-nav ul::before,
 .float-nav ul::after {
@@ -426,7 +426,7 @@ aside .txt-nav div {
 }
 .float-nav ul::after {
   content: "</nav>";
-  bottom: 0;
+  bottom: -10px;
   right: 0;
 }
 .float-nav ul li {
@@ -468,7 +468,196 @@ aside .txt-nav div {
   opacity: 1;
   transition-delay: 1s;
 }
-
+.float-nav .display-form {
+  width: 100%;
+  max-width: 650px;
+}
+.float-nav .display-form h4 span.markup {
+  font-weight: 300;
+}
+.float-nav .display-form p {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.input-group input[type="text"],
+.input-group input[type="email"],
+textarea {
+  border-style: none;
+  outline: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  color: var(--grey-color-1);
+}
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+}
+.input-group .form-control {
+  font-size: 14px;
+  line-height: 14px;
+  transition: all 0.1s ease-out;
+}
+.input-group label {
+  position: absolute;
+  font-size: 14px;
+  left: 15px;
+  top: 14px;
+  transition: all 0.2s ease;
+}
+.input-group .form-control,
+.input-group label {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  color: var(--grey-color-3);
+}
+.input-group input[type="text"]:focus ~ label,
+.input-group input[type="text"]:valid ~ label,
+.input-group input[type="email"]:focus ~ label,
+.input-group input[type="email"]:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: 0;
+  font-size: 10px;
+  color: var(--green-color);
+}
+.input-group .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.input-group .bar:before,
+.input-group .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: var(--green-color);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.input-group .bar:before {
+  left: 50%;
+}
+.input-group .bar:after {
+  right: 50%;
+}
+.input-group input[type="text"]:focus ~ .bar:before,
+.input-group input[type="text"]:focus ~ .bar:after,
+.input-group input[type="email"]:focus ~ .bar:before,
+.input-group input[type="email"]:focus ~ .bar:after,
+textarea:focus ~ .bar:before,
+textarea:focus ~ .bar:after {
+  width: 50%;
+}
+textarea {
+  padding-top: 20px;
+  height: initial;
+}
+.radio-group {
+  position: relative;
+  margin-bottom: 50px;
+}
+.wrap-radio {
+  position: absolute;
+  left: 0;
+}
+.radio-group input {
+  display: none;
+}
+.radio-group label {
+  font-size: 24px;
+  color: #bfbfbf;
+  display: inline-block;
+  padding: 0 0 0 1em;
+  cursor: pointer;
+}
+.radio-group label:before {
+  content: "";
+  display: inline-block;
+  background: var(--green-color);
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 80%;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border: 10px solid #f8f8f8;
+  transition: border 0.3s ease;
+}
+.radio-group input:checked + label:before {
+  border-color: #fff;
+  border-width: 3px;
+}
+.radio-group input + label {
+  transition: color 0.7s ease;
+}
+.radio-group input:checked + label {
+  color: #5d5d5d;
+}
+.btn {
+  letter-spacing: 0.1em;
+  margin: 20px 0;
+  display: table;
+  border-radius: 3px;
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-weight: 500;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn-small {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.btn-medium {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.btn-large {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 35px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.btn-extra-large {
+  width: 100%;
+  height: 40px;
+  padding: 0 35px;
+  font-size: 14px;
+}
+.btn-dark {
+  color: var(--white-color);
+  background: var(--bg-color);
+}
+.btn-dark:hover {
+  background: var(--txt-color);
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
 /**
  * 4.1 Pages Style
  */

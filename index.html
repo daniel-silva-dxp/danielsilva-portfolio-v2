@@ -155,7 +155,7 @@
         <div class="bg1"></div>
         <div class="bg2"></div>
         <div class="container align-row--center">
-          <ul class="main-nav">
+          <ul class="main-nav" style="width: 100%; max-width: 600px">
             <li>
               <a href="https://wa.me/qr/6MXVTWEZ3CNKK1" class="link">
                 <span>
@@ -166,6 +166,65 @@
                 +55 11 95199-1612</a
               >
             </li>
+            <form
+              class=""
+              action="contact.php"
+              method="POST"
+              autocomplete="off"
+            >
+              <div class="display-form">
+                <p>Conte-me um pouco sobre seu projeto.</p>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    name="c_name"
+                    required
+                    class="form-control"
+                  />
+                  <span class="bar"></span>
+                  <label>Nome:</label>
+                </div>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    name="c_email"
+                    required
+                    class="form-control"
+                  />
+                  <span class="bar"></span>
+                  <label>E-mail:</label>
+                </div>
+                <div class="radio-group">
+                  <p>Já possui layout?</p>
+                  <div class="wrap-radio">
+                    <div class="checkbox">
+                      <input
+                        type="checkbox"
+                        id="sim"
+                        name="c_sim"
+                        value="Sim"
+                      />
+                      <label for="sim">sim</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <textarea
+                    name="c_message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    class="form-control"
+                    required
+                  ></textarea>
+                  <span class="bar"></span>
+                  <label>Mensagem:</label>
+                </div>
+                <button type="submit" class="btn btn-extra-large btn-dark">
+                  Enviar mensagem
+                </button>
+              </div>
+            </form>
           </ul>
         </div>
       </nav>
