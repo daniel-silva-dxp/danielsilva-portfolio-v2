@@ -17,7 +17,7 @@
     pagination: {
       clickable: true,
     },
-    breakpoints: { 991: { slidesPerView: 1.3 } },
+    //breakpoints: { 991: { slidesPerView: 1.3 } },
   });
 
   $.exists = function (selector) {

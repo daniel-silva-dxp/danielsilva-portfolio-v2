@@ -797,7 +797,8 @@ aside .txt-nav div {
   height: 100%;
 }
 .swiper-container--cases .swiper-slide {
-  height: 90%;
+  background-color: #fff;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -819,8 +820,6 @@ aside .txt-nav div {
   height: 73%;
   padding: 10px;
   margin: 10px;
-  background-color: var(--white-color);
-  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -908,6 +907,12 @@ aside .txt-nav div {
 /*----------------------------------------
         MEDIA QUERIES
 -----------------------------------------*/
+
+@media only screen and (min-width: 699px) {
+  .swiper-container--cases .swiper-slide .box img {
+    max-width: 500px;
+  }
+}
 
 @media only screen and (max-width: 805px) {
   h1 {
