@@ -827,14 +827,13 @@ aside .txt-nav div {
 }
 .swiper-container--cases .swiper-slide .box h1 {
   color: var(--txt-color);
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 28px;
+  line-height: 28px;
   margin-top: 10px;
 }
 .swiper-container--cases .swiper-slide .box p {
   color: var(--txt-color);
   margin: 0;
-  padding: 8px 0;
   font-size: 12px;
 }
 .swiper-container--cases .swiper-slide .box h5 {
