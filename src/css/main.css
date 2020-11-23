@@ -809,13 +809,13 @@ aside .txt-nav div {
   height: 100%;
 }
 .swiper-container--cases .swiper-slide {
-  height: 80%;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .swiper-container--cases .swiper-slide {
-  opacity: 0.4;
+  opacity: 0.1;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -828,7 +828,8 @@ aside .txt-nav div {
 }
 .swiper-container--cases .swiper-slide .box {
   width: 100%;
-  padding: 20px;
+  height: 73%;
+  padding: 10px;
   margin: 10px;
   background-color: var(--white-color);
   border-radius: 3px;
@@ -836,7 +837,23 @@ aside .txt-nav div {
   align-items: center;
   justify-content: center;
 }
-
+.swiper-container--cases .swiper-slide .box h1 {
+  color: var(--txt-color);
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 10px;
+}
+.swiper-container--cases .swiper-slide .box p {
+  color: var(--txt-color);
+  margin: 0;
+  padding: 8px 0;
+  font-size: 12px;
+}
+.swiper-container--cases .swiper-slide .box h5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--light-grey-color);
+}
 /**
  * 5.6 Slider Contact
  */
