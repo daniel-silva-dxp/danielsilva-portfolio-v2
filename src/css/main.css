@@ -813,6 +813,18 @@ aside .txt-nav div {
   font-size: 18px;
   border: 1px solid #f00;
 }
+.swiper-container--cases .swiper-slide {
+  opacity: 0.4;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.swiper-container--cases .swiper-slide.swiper-slide-active {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
 /**
  * 5.6 Slider Contact
@@ -1036,18 +1048,6 @@ aside .txt-nav div {
   }
   .swiper-container--cases {
     margin-right: 20px;
-  }
-  .swiper-container--cases .swiper-slide {
-    opacity: 0;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .swiper-container--cases .swiper-slide.swiper-slide-active {
-    opacity: 1;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
   }
   .swiper-container--cases .swiper-slide {
     display: flex;
