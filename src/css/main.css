@@ -797,14 +797,13 @@ aside .txt-nav div {
   height: 100%;
 }
 .swiper-container--cases .swiper-slide {
-  background-color: #fff;
   height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .swiper-container--cases .swiper-slide {
-  opacity: 0.1;
+  opacity: 0.3;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -823,22 +822,27 @@ aside .txt-nav div {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .swiper-container--cases .swiper-slide .box h1 {
-  color: var(--txt-color);
+  color: var(--white-color);
   font-size: 28px;
   line-height: 28px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .swiper-container--cases .swiper-slide .box p {
-  color: var(--txt-color);
-  margin: 0;
+  color: var(--white-color);
+  margin: 0 auto;
   font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 10px;
+  max-width: 350px;
 }
 .swiper-container--cases .swiper-slide .box h5 {
   font-size: 12px;
   font-weight: 600;
-  color: var(--light-grey-color);
+  color: var(--green-color);
 }
 /**
  * 5.6 Slider Contact
@@ -910,7 +914,7 @@ aside .txt-nav div {
 
 @media only screen and (min-width: 699px) {
   .swiper-container--cases .swiper-slide .box img {
-    max-width: 500px;
+    max-width: 600px;
   }
 }
 
@@ -1057,7 +1061,11 @@ aside .txt-nav div {
     justify-content: center;
   }
   .swiper-container--cases {
+    cursor: pointer;
     margin-right: 20px;
+  }
+  .cases-content {
+    position: relative;
   }
 }
 @media only screen and (min-width: 1200px) {
