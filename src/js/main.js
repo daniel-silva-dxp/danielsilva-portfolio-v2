@@ -27,15 +27,15 @@ Page Transition
 -------------------*/
 function PageTransition() {
   var preload = anime({
-    targets: ".ms-preloader",
+    targets: ".ds-preloader",
     opacity: [1, 0],
     duration: 1000,
     easing: "easeInOutCubic",
     complete: function (preload) {
-      $(".ms-preloader").css("visibility", "hidden");
+      $(".ds-preloader").css("visibility", "hidden");
     },
   });
-  $(".ms-main-container").addClass("loaded");
+  $(".ds-main-container").addClass("loaded");
   var cont = anime({
     targets: ".loaded",
     opacity: [0, 1],
@@ -46,7 +46,7 @@ function PageTransition() {
       $(".ug-thumb-image").css({
         opacity: "1",
       });
-      $(".ms-section__block img").css({
+      $(".ds-section__block img").css({
         opacity: "1",
       });
       $(".ug-thumb-wrapper, .post-item").css({
@@ -58,10 +58,10 @@ function PageTransition() {
     var url = $(this).attr("href");
     if (url != "#" && url != "") {
       e.preventDefault();
-      $(".ms-preloader").css("visibility", "visible");
+      $(".ds-preloader").css("visibility", "visible");
       var url = $(this).attr("href");
       var preload = anime({
-        targets: ".ms-preloader",
+        targets: ".ds-preloader",
         opacity: [0, 1],
         duration: 300,
         easing: "easeInOutQuad",

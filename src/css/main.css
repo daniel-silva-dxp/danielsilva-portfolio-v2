@@ -190,10 +190,6 @@ a {
     max-width: 1140px;
   }
 }
-.content {
-  width: 90%;
-  height: auto;
-}
 .tags {
   color: var(--light-grey-color);
   position: fixed;
@@ -477,7 +473,7 @@ aside .txt-nav div {
  * 4.1 Pages Style
  */
 
-.ms-preloader {
+.ds-preloader {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -488,25 +484,25 @@ aside .txt-nav div {
   visibility: visible;
   background-color: #151515;
 }
-.ms-main-container {
+.ds-main-container {
   position: relative;
   width: 100%;
   min-height: 100vh;
   opacity: 0;
   background-color: var(--bg-color);
 }
-.ms-container {
+.ds-container {
   width: 100%;
   height: 100vh;
   position: relative;
   padding-top: 12em;
 }
-.ms-section__block {
+.ds-section__block {
   width: 85%;
   max-width: 88em;
   margin: 0 auto 6em;
 }
-.ms-page-title span {
+.ds-page-title span {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: #df1f29;
@@ -941,11 +937,11 @@ aside .txt-nav div {
     -ms-user-select: none;
     user-select: none;
   }
-  .ms-container {
+  .ds-container {
     padding-top: 6em;
     padding-bottom: 3em;
   }
-  .ms-section__block {
+  .ds-section__block {
     width: auto;
     margin: 0 15px 3em;
   }
